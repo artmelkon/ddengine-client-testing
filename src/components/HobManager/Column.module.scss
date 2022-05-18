@@ -1,0 +1,28 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  margin: 8px;
+  border: 1px solid lightgray;
+  border-radius: .5rem;
+
+  & .Title, & .ProductList {
+    padding: .8rem;
+    color: #FDFFFC;
+    text-shadow: 1px 1px 4px #3c3c3c;
+  }
+
+  & .ProductList {
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    min-height: 10rem;
+
+    &.bgColor {
+      background-color: transparent;
+    }
+
+    &.activeBg {
+      background-color: #457b9d;
+    }
+  }
+}

@@ -1,14 +1,6 @@
 import { gql, useQuery } from '@apollo/client';
 
-export const GET_DOG_QUERY = gql`
-  query Getdog($name: String) {
-    dog(name: $name) {
-      id
-      name
-      breed
-    }
-  }
-`;
+import {GET_DOG_QUERY} from '../queries';
 
 export function Dog({ name })
 {

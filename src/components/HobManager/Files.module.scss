@@ -1,0 +1,16 @@
+.productContainer {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: .4rem;
+  padding:.8rem;
+  margin-bottom: .8rem;
+  font-size: 1.6rem;
+  color: #444;
+
+  &.activeBg {
+    background-color: #a8dadc
+  }
+  &.bgColor {
+    background-color: #FDFFFC;
+  }
+}
